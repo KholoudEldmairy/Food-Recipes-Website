@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+:root{
+    --gray:rgba(146, 144, 143, 0.284);
+    --creamy:#e2ac7f;
+    --black:#1A1A1A;
+    --white:white;
+    --rose:rgb(243,213,225);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.greek{
+    background-image: url(img/824qbx11.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 0px 0px 15px 15px;
+
+}
+
+.greek header{
+    width: 100%;
+    height: 25rem;
+    position: relative;
+    margin-top: -140px;
+    /* margin-bottom: -0.41249997616px; */
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    font-family: "Dancing Script";
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.greek header h4{
+    padding-left: 0.5rem;
+    font-size: 3rem;
+    
+}
+
+
+.greek header .navbar{
+    padding-left: 53%;
+}
+
+.greek header .toggle_btn{
+    color: var(--white);
+    cursor: pointer;
+    font-size: 3rem;
+    display: none;
+}
+
+.greek header .dropdown_menu{
+    height:0px;
+    margin-left: -320px;
+    margin-top: -30px;
+    z-index: 100;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 280px;
+    border-radius: 10px;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.greek header .dropdown_menu.open{
+    height: 230px;
+    font-size: 1.8rem;  
+}
+
+
+.greek header .dropdown_menu a{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+
+
+.greek .navbar a{
+    margin-left: 4.5rem;
+    font-size: 1.5rem;
+    color: var(--white);
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+.greek .navbar a:hover{
+    background-color: rgb(243,213,225,0.5);
+    color: var(--black);
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+.greek .main{
+    border-radius: 0px 0px 15px 15px;
+
+    height:554px;
+}
+
+
+.greek .main .centered-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(243,213,225,0.5); /* Optional: Add a background to make the text more readable */
+    padding: 1rem;
+    border-radius: 10px;
+    color: var(--white);
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+.greek .container {
+    position: absolute;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.greek .container .recipes{
+    width: 90%;
+    margin-left: 150px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    /* background-color: rgba(255, 6, 6, 0.162); */
+    background-color: rgba(228, 171, 194, 0.3);
+    box-shadow: 3px 4px 8px rgba(15, 15, 15, 0.5);
+    display: flex;
+}
+
+.greek .container .recipes .content{
+    width: 600px;
+    padding-left: 30px;
+    padding-top: 20px;
+    font-family: Arial, sans-serif;
+}
+.greek .container .recipes .content h1{
+    margin-bottom: 10px;
+}
+.greek .container .recipes .content h3{
+    margin-bottom: 10px;
+
+}
+
+
+.greek .container .recipes .content ul,ol{
+    padding-left: 35px;
+    margin-bottom: 10px;
+}
+.greek .container .recipes .content ol{
+    padding-left: 35px;
+    margin-bottom: 20px;
+}
+
+.greek .container .recipes .img-box{
+    padding-left: 400px;
+    padding-top: 30px;
+}
+.greek .container .recipes .img-box .img1{
+    border-radius: 75px;
+    margin-bottom: 20px;
+    /* margin-top: -10px; */
+    box-shadow: 3px 4px 8px rgba(15, 15, 15, 0.7);
+    width: 430px;
+    height: 400px;
+    object-fit: cover;
+}
+.greek .container .recipes .video {
+    margin-left: 55px;
+}
+.greek .container .recipes .img-box .video a:link , a:visited{
+    text-decoration: none;
+    background-color:var(--gray);
+    color: var(--black);
+    padding: 0.5rem;
+    border-radius: 2rem;
+    transition: 0.3s;
+    font-family: Arial, sans-serif;
+}
+
+.greek .container .recipes .img-box .video a:hover {
+    background-color:rgba(146, 144, 143, 0.4);
+    padding: 0.7rem;
+}
+
+
+
+
+.greek .container .recipes .img-box .video a .img2{
+    width: 25px;
+    height: 20px;
+    margin-bottom: -4px;
+    margin-left: 5px;
+}
+
+
+/* Style the checkboxes */
+input[type="checkbox"] {
+    /* Hide the default checkbox */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px; /* Optional: Rounded corners */
+    background-color: rgb(221, 189, 202); /* Background color of the checkbox */
+    cursor: pointer; /* Change cursor to pointer */
+    position: relative;
+}
+
+/* Change the color when checked */
+input[type="checkbox"]:checked {
+    background-color: rgb(123, 122, 123); /* Fill color when checked */
+    
+}
+
+/* Add a checkmark */
+input[type="checkbox"]:checked::after {
+    content: '✔'; /* Unicode checkmark */
+    font-size: 16px;
+    color: white; /* Checkmark color */
+    position: absolute;
+    bottom: 1px;
+    left: 2.5px;
+}
+
+/* responsive style*/
+
+/* Existing styles remain as is */
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .greek header .navbar {
+        margin-left: -30%; /* Reduce spacing for tablets */
+        
+    }
+    .greek header .navbar a{
+        font-size: 1.9rem;
+    }
+
+
+    .greek .main {
+        padding: 1rem;
+        padding-bottom: 300px;
+        height: 350px;
+    }
+
+    .greek .main .centered-text {
+        font-size: 1.5rem;
+        width: 63%;
+    }
+
+   
+
+
+    .greek .container{
+        width: 90%;
+        padding-left: 40px;
+        font-size: 1.3rem;
+    }
+
+    .greek .container .recipes {
+        flex-wrap: wrap;
+        margin-left: 10px;
+        width: 100%;
+    }
+
+    .greek .container .recipes .content{
+        width: 100%;
+        padding: 1rem;
+        text-align: left;
+    }
+
+    .greek .container .recipes .img-box {
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .greek .container .recipes .img-box .img1 {
+        width: 75%;
+        height: auto;
+    }
+
+    .greek .container .recipes .video a {
+        display: inline-block;
+        margin-top: 1rem;
+        margin-left: -75px;
+    }
+}
+
+
+
+
+@media (max-width: 1024px) {
+
+    .greek header .navbar {
+        margin-left: -43%; /* Reduce spacing for tablets */
+    }
+
+    .greek .main {
+        padding: 1rem;
+        padding-bottom: 300px;
+        height: 350px;
+    }
+
+    .greek .main .centered-text {
+        font-size: 1.2rem;
+        width: 59%;
+    }
+
+    .greek .main .recipe-dropdown{
+        font-size: 1.2rem;
+    }
+   
+
+
+    .greek .container{
+        width: 90%;
+        padding-left: 40px;
+        font-size: 1.2rem;
+    }
+
+    .greek .container .recipes {
+        flex-wrap: wrap;
+        margin-left: 10px;
+        width: 100%;
+    }
+
+    .greek .container .recipes .content{
+        width: 100%;
+        padding: 1rem;
+        text-align: left;
+    }
+    .greek .container .recipes .img-box {
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .greek .container .recipes .img-box .img1 {
+        width: 75%;
+        height: auto;
+    }
+
+    .greek .container .recipes .video a {
+        display: inline-block;
+        margin-top: 1rem;
+        margin-left: -75px;
+    }
+}
+@media (max-width:992px){
+
+    .greek header .navbar {
+        padding-left: 15%; /* Reduce spacing for tablets */
+        display: none;
+    }
+
+    .greek header .toggle_btn{
+        display: block; /* Show the toggle button */
+        margin-left: 730px;
+        font-size: 1.8rem;
+        
+    }
+
+    .greek header .dropdown_menu{
+        margin-top: 225px;
+    }
+
+    .greek header .toggle_btn{
+        display: block; /* Show the toggle button */
+        margin-left: 730px;
+        font-size: 1.8rem;
+        
+    }
+    .greek .container .recipes .img-box .img1 {
+        width: 75%;
+        height: auto;
+    }
+
+    .greek .container .recipes .img-box {
+        width: 70%;
+        margin-left: 130px;
+    }
+
+    .greek .main .centered-text{
+        width: 77%;
+        font-size: 1.5rem;
+    }
+
+}
+
+
+
+@media (max-width: 864px){
+    .greek header .navbar {
+        padding-left: 15%; /* Reduce spacing for tablets */
+        display: none;
+    }
+
+    .greek header .toggle_btn{
+        display: block; /* Show the toggle button */
+        margin-left: 590px;
+        font-size: 1.8rem;
+        
+    }
+    .greek header{
+        width: 100.2%;
+    }
+
+    .greek .main{
+        height: 200px;  
+   }
+}
+
+
+@media (max-width: 768px){
+
+    .greek header .navbar {
+        padding-left: 15%; /* Reduce spacing for tablets */
+        display: none;
+    }
+
+    .greek header .toggle_btn{
+        display: block; /* Show the toggle button */
+        margin-left: 490px;
+        font-size: 1.8rem;
+        
+    }
+
+    .greek header .navbar {
+        margin-left: -20%; 
+    }
+
+    .greek .main{
+        height: 175px;
+        
+   }
+
+    .greek .main .centered-text {
+        font-size: 1rem;
+        width: 65%;
+
+    }
+
+    .greek .main .recipe-dropdown{
+        font-size: 1rem;
+    }
+    .greek .container{
+        margin-left: -15px;
+    }
+
+    .greek .container .recipes{
+        width: 98%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .greek .container .recipes {
+        margin-left: 0;
+    }
+
+    .greek .container .recipes .img-box .img1 {
+        width: 80%;
+    }
+    .greek .container .recipes .img-box {
+        margin-left: 90px;
+    }
+
+    .greek .container .recipes .img-box .video a{
+        margin-left: -65px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .greek header{
+        width: 100%;
+    }
+    .greek header .navbar {
+        padding-left: 2%; /* Reduce spacing for tablets */
+        display: none;
+    }
+
+    .greek header .toggle_btn{
+        display: block; /* Show the toggle button */
+        margin-left: 395px;
+        font-size: 1.8rem;
+        
+    }
+
+    .greek header .dropdown_menu{
+        width: 200px;
+        font-size: 0.8rem;
+    }
+    .greek header .dropdown_menu.open{
+        height: 220px;
+        margin-left: -250px;
+    }
+
+    .greek header h4{
+        font-size: 2rem;
+    }
+    .greek header .navbar a{
+        font-size: 1rem;
+    }
+
+    .greek header .navbar a{
+        font-size: 1rem;
+    }
+
+
+    .greek{
+        width: 129.5%;
+        height: 550px;
+        background-size: cover;
+        border-radius: 0px 0px 15px 15px;
+    }
+    .greek .main{
+        height: 178px;
+        border-radius: 0px 0px 15px 15px;
+    }
+
+
+    .greek .main .centered-text {
+        font-size: 1rem;
+        width: 105%;
+        margin-left: 75px;
+        margin-top: 6rem;
+    }
+
+
+    .greek .container{
+        width: 116%;
+        padding-left: 35px;
+        margin-top: -320px;
+
+    }
+    .greek .container .recipes .img-box{
+        margin-left: 150px;
+    }
+
+
+    .greek .container .recipes .img-box .video a{
+        margin-left: -200px;
+    }
+
+    .greek .container .recipes .img-box .img1 {
+        width: 90%;
+        margin-left: -140px;
+    }
+
+    .greek .container .recipes .content h1 {
+        font-size: 1.2rem;
+    }
+
+    .greek .container .recipes .content h3 {
+        font-size: 1rem;
+    }
+}

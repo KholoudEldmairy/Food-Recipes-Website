@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greek Kitchen</title>
+    <link rel="icon" href="img/recipe-pink.svg">
+    <link rel="stylesheet" href="greek.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+
+
+        // Function to toggle strikethrough on ingredient
+        function toggleStrikethrough(checkbox) {
+            const label = checkbox.parentElement; // Get the parent label
+            if (checkbox.checked) {
+                // Wrap the ingredient text in <del> for strikethrough
+                const ingredientText = label.textContent.trim();
+                label.innerHTML = `<input type="checkbox" onchange="toggleStrikethrough(this)" checked> <del>${ingredientText}</del>`;
+            } else {
+                // Remove the <del> tag if unchecked
+                const ingredientText = label.querySelector("del").textContent.trim();
+                label.innerHTML = `<input type="checkbox" onchange="toggleStrikethrough(this)"> ${ingredientText}`;
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+    <section class="greek">
+        <header>
+            <img src="img/recipe-pink.svg" alt="icon" style="height: 40px; padding-left: 2rem">
+            <h4>Recipes</h4>
+            <nav class="navbar">
+                <a href="main.html#home">Home</a>
+                <a href="main.html#kitchen">Our Kitchen</a>
+                <a href="main.html#aboutUs">About Us</a>
+                <a href="form.html" target="_blank">Contact</a>      
+            </nav>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>  
+
+            <div class="dropdown_menu">
+                <a href="main.html#home">Home</a>
+                <a href="main.html#kitchen">Our Kitchen</a>
+                <a href="main.html#aboutUs">About Us</a>
+                <a href="form.html">Contact</a>
+            </div>
+        </header>
+        <div class="main">
+            <p class="centered-text">Welcome to our recipe collection! Enjoy exploring our delicious dishes.</p>
+
+        </div>
+
+        <div class="container">
+
+            <!-- Chicken Souvlaki Pitas -->
+            <div class="recipes">
+                <div class="content">
+                    <h1>Chicken Souvlaki Pitas</h1>
+                    <h3>Ingredients</h3>
+                    <form>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 5 medium lemons, divided</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 4 tablespoons olive oil</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 4 garlic cloves, minced</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 2 teaspoons dried oregano</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 1/2 teaspoon salt</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 1/4 teaspoon pepper</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 2 pounds boneless skinless chicken breasts, cut into 1-inch pieces</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 6 whole pita breads</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 1 carton (8 ounces) refrigerated tzatziki sauce</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> Optional toppings: Chopped tomatoes, chopped cucumber, sliced red onion, and fresh dill sprigs</label>
+                    </form>
+                    <h3>Directions</h3>
+                    <ol>
+                        <li>Cut 3 lemons crosswise in half; squeeze juice from lemons. Transfer juice to a large bowl or shallow dish. Whisk in oil, garlic, oregano, salt and pepper. Add chicken; turn to coat. Refrigerate 1 hour.</li>
+                        <li>Drain chicken, discarding marinade. Thinly slice remaining 2 lemons. On 12 metal or soaked wooden skewers, alternately thread chicken and lemon slices. Grill kabobs, covered, over medium heat (or broil 4 in. from heat) until chicken is no longer pink, about 10 minutes, turning occasionally. Serve with pita bread, tzatziki sauce and toppings as desired.</li>
+                    </ol>
+                </div>
+                <div class="img-box">
+                    <img src="img/Souvlaki-Pita-Pockets_EXPS_MMEBZ22_251248_MD_02_08_1b_v4-1.jpg" class="img1">
+                    <div class="video">
+                        <a href="https://cdn.jwplayer.com/previews/4oamoWcH" target="_blank">Watch How to Make Chicken Souvlaki Pitas<img src="img/video-player.svg" alt="" class="img2"></a>  
+                    </div>
+                </div>
+            </div>
+
+            <!-- Greek Sheet-Pan Chicken -->
+            <div class="recipes">
+                <div class="content" id="recipe1">
+                    <h1>Greek Sheet-Pan Chicken</h1>
+                    <h3>Ingredients</h3>
+                    <form>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 4 bone-in chicken thighs, skin removed</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 1/2 cup Greek vinaigrette</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 8 small red potatoes, quartered</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 1 medium sweet red pepper, cut into 1/2-in. strips</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 1 can (14 ounces) water-packed artichoke hearts, drained and halved</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 3/4 cup pitted ripe olives, drained</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 1 small red onion, cut into 8 wedges</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 1/4 teaspoon pepper</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 1/3 cup crumbled feta cheese</label>
+                    </form>
+                    <h3>Directions</h3>
+                    <ol>
+                        <li>Preheat oven to 375°. Spray a 15x10x1-in. baking pan with cooking spray; set aside.</li>
+                        <li>In a large bowl, combine the first 7 ingredients; toss to coat. Place chicken and vegetables in a single layer on baking pan; sprinkle with pepper. Bake until a thermometer inserted into chicken reads 170°- 175° and vegetables are tender, 30-35 minutes.</li>
+                        <li>If desired, preheat broiler. Broil chicken and vegetables 3-4 inches from heat until lightly browned, 2-3 minutes. Remove from oven, cool slightly. Sprinkle with feta cheese.</li>
+                    </ol>
+
+                </div>
+                <div class="img-box">
+                    <img src="img/Greek-Sheet-Pan-Chicken_EXPS_TOHESCODR22_201257_DR_02_18_3b.jpg" class="img1">
+                    <div class="video">
+                        <a href="https://cdn.jwplayer.com/previews/lCh6HMj7" target="_blank">Watch How to Make Chicken Souvlaki Pitas<img src="img/video-player.svg" alt="" class="img2"></a>  
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gyros -->
+            <div class="recipes">
+                <div class="content">
+                    <h1>Gyros</h1>
+                    <h3>Ingredients</h3>
+                    <form>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 1 medium onion, quartered</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 1 pound ground beef</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 1 pound ground lamb</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 3 garlic cloves</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 2 teaspoons kosher salt</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 1 teaspoon dried oregano</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 1/2 teaspoon pepper</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 8 pita breads</label>
+                    </form>
+                    <h3>Directions</h3>
+                    <ol>
+                        <li>Preheat oven to 325°. Process onion in a food processor until finely chopped, 10-15 seconds. Transfer to a clean kitchen towel; squeeze out as much liquid as possible. Return onion to food processor. Add beef, lamb, garlic, salt, oregano, thyme, rosemary, cumin and pepper. Pulse until mixed, 2-3 times; scrape down sides. Process until meat mixture is sticky and paste-like, about 1 minute.</li>
+                        <li>Transfer meat mixture into an ungreased 9x5-in. loaf pan. Press and smooth top of mixture with a rubber spatula, packing tightly into pan.</li>
+                        <li>Place loaf pan in a larger baking pan; add 1 in. of hot water to larger pan. Bake until a thermometer reads 165°, 60-70 minutes. Remove loaf pan from water bath immediately to a wire rack. Place a second 9x5-in. loaf pan, bottom side down, onto the meat mixture in the pan. Weigh down the top pan by adding several cans to the top pan. Cool like this for 30 minutes.</li>
+                        <li>Remove weighted pan; drain grease from loaf. Return loaf to pan. Cover and refrigerate until chilled, about 3 hours or overnight. Remove from pan, cut widthwise into 1/4-in. slices.</li>
+                        <li>In a large skillet, heat 1 tablespoon oil over medium-high heat. In batches, cook and stir meat slices until lightly browned, 3-5 minutes, adding more oil as needed. Serve in pitas with toppings as desired.</li>
+                    </ol>
+
+                </div>
+                <div class="img-box">
+                    <img src="img/Gyro_Hero-Shot-Option-2.jpg" class="img1" style="height: 650px;">
+                    <div class="video">
+                        <a href="https://cdn.jwplayer.com/previews/9pooHkbC" target="_blank">Watch How to Make Chicken Souvlaki Pitas<img src="img/video-player.svg" alt="" class="img2"></a>  
+                    </div>
+                </div>
+                </div>
+            
+
+            <!-- Greek Chicken and Potatoes -->
+            <div class="recipes">
+                <div class="content">
+                    <h1>Greek Chicken and Potatoes</h1>
+                    <h3>Ingredients</h3>
+                    <form>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 1 roasting chicken (6 to 7 pounds)</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> Salt and pepper to taste</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 4 baking potatoes</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 3 tablespoons lemon juice</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 3/4 cup chicken broth</label>
+                    </form>
+                    <h3>Directions</h3>
+                    <ol>
+                        <li>Preheat oven to 350°. Place chicken breast side up on a rack in a roasting pan. Sprinkle with salt and pepper and half of the oregano. Arrange potatoes around chicken; sprinkle with salt, pepper and remaining oregano. Pour butter and lemon juice over chicken and potatoes. Add chicken broth to pan.</li>
+                        <li>Bake, uncovered, 2-2-1/2 hours or until a thermometer inserted in thigh reads 170°, basting frequently with pan drippings.</li>
+                        <li>Remove chicken from oven; tent with foil. Let stand 15 minutes before carving. If desired, skim fat and thicken pan drippings for gravy. Serve with chicken.</li>
+                    </ol>
+
+                </div>
+                <div class="img-box">
+                    <img src="img/EXPS_TOHAM25_2597_P2_MD_04_17_5b.jpg" class="img1" style="height: 350px;">
+                    <div class="video">
+                        <a href="https://youtu.be/8Ceqn021Ykg?si=xc4YjR9EYYASJfVZ" target="_blank">Watch How to Make Chicken Souvlaki Pitas<img src="img/video-player.svg" alt="" class="img2"></a>  
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <!-- Lemon-Garlic Lima Beans -->
+            <div class="recipes">
+                <div class="content">
+                    <h1>Lemon-Garlic Lima Beans</h1>
+                    <h3>Ingredients</h3>
+                    <form>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 1 pound dried lima beans</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 3 tablespoons olive oil</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 1 medium onion</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 4 garlic cloves</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 2 tablespoons lemon juice</label>
+                    </form>
+
+                    <h3>Directions</h3>
+                    <ol>
+                        <li>Rinse and sort beans; soak according to package directions. Drain and rinse beans, discarding liquid.</li>
+                        <li>Place beans in a large saucepan; add bay leaves and water to cover by 2 in. Bring to a boil. Reduce heat; simmer, covered, until beans are tender, 1-1/4 to 1-1/2 hours. Drain; discard bay leaves.</li>
+                        <li>In a large skillet, heat 1 tablespoon oil over medium heat. Add onion; cook and stir until tender, 3-4 minutes. Add garlic; cook 1 minute longer. Add next 6 ingredients. Stir in drained beans and remaining 2 tablespoons oil; toss to combine. Sprinkle with additional parsley.</li>
+                    </ol>
+
+                </div>
+                <div class="img-box">
+                    <img src="img/Lemon-Garlic-Lima-Beans_EXPS_THN17_206057_D06_16_4b-2.jpg" class="img1" style="height: 350px;">
+                    <div class="video">
+                        <a href="https://cdn.jwplayer.com/previews/eevjG0Lz" target="_blank">Watch How to Make Chicken Souvlaki Pitas<img src="img/video-player.svg" alt="" class="img2"></a>  
+                    </div>
+                </div>
+            </div>
+
+               
+
+            <!-- Greek Salmon -->
+            <div class="recipes">
+                <div class="content">
+                    <h1>Greek Salmon</h1>
+                    <h3>Ingredients</h3>
+                    <form>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 1 pound salmon</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 3 tablespoons olive oil</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 1 tablespoon lemon juice</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 1 tablespoon fresh dill</label><br>
+                        <label><input type="checkbox" onchange="toggleStrikethrough(this)"> 1 teaspoon dried oregano</label>
+                    </form>
+                    <h3>Directions</h3>
+                    <ol>
+                        <li>Cut 3 lemons crosswise in half; squeeze juice from lemons. Transfer juice to a large bowl or shallow dish. Whisk in oil, garlic, oregano, salt and pepper. Add chicken; turn to coat. Refrigerate 1 hour.</li>
+                        <li>Drain chicken, discarding marinade. Thinly slice remaining 2 lemons. On 12 metal or soaked wooden skewers, alternately thread chicken and lemon slices. Grill kabobs, covered, over medium heat (or broil 4 in. from heat) until chicken is no longer pink, about 10 minutes, turning occasionally. Serve with pita bread, tzatziki sauce and toppings as desired.</li>
+                    </ol>
+
+                </div>
+                <div class="img-box">
+                    <img src="img/greek-salmon-3-1024x1536.jpg" class="img1" style="height: 350px;">
+                    <div class="video">
+                        <a href="https://youtu.be/DZtBQQFl9eU?si=Q6VENW5ZwTXaLvtf" target="_blank">Watch How to Make Chicken Souvlaki Pitas<img src="img/video-player.svg" alt="" class="img2"></a>  
+                    </div>
+                </div>
+            </div>
+                </div>
+            
+
+        </div>
+    </section>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+        
+        toggleBtn.onclick = function () {
+
+        dropDownMenu.classList.toggle('open')
+        const isopen = dropDownMenu.classList.contains('open')
+        toggleBtnIcon.classList = isopen ? 'fa-solid fa-xmark':'fa-solid fa-bars'
+        }
+    </script>
+
+    
+</body>
+</html>
+
